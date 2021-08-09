@@ -142,3 +142,31 @@ $('#jq4 .btn3').click(() => {
     veletlen = Math.floor(Math.random() * jq4Szinek.length)
     $('#jq4 button').css('background-color', jq4Szinek[veletlen])
 })
+
+// jQuery plusz esemény - 1. feladat
+let bgcolor
+$('#jq5 .egyik').click(() => {
+    bgcolor = $('#jq5 input').val()
+    $('#jq5 .egyik').css('background-color', bgcolor)
+})
+
+// jQuery plusz esemény - 2. feladat
+let mehet = true
+$('#jq5 .masik').click(() => {
+    bgcolor = $('#jq5 input').val()
+    if (mehet) {
+        $('#jq5 .masik').css('background-color', bgcolor)
+        mehet = false
+    }
+})
+
+// jQuery Számláló
+let szamlalo = 0
+$('#jq6 .novel').click(() => {
+    szamlalo++
+    $('#jq6 #ertek').text(szamlalo)
+})
+$('#jq6 .csokken').click(() => {
+    szamlalo--
+    $('#jq6 #ertek').text(szamlalo)
+})
