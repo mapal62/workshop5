@@ -117,8 +117,28 @@ listaba("Egerben");
 
 /* jQuery DOM - 2. feladat */
 let additionalBlock = {
-    title: "Beillesztve JavaScripttel",
+    title: "DOM - 2. feladat: Beillesztve JavaScripttel",
     text: "Ez a blokk a JavaScript jQuery könyvtárával lett beillesztve. Király!",
 };
 $('#jq3').append(`<h1>${additionalBlock.title}</h1>`)
 $('#jq3').append(`<p>${additionalBlock.text}</p>`)
+
+/* jQuery esemény - 1. feladat */
+$('#jq4 .btn').click(() => { console.log('Igen, most rám kattintottál') })
+
+/* jQuery esemény - 2. feladat */
+eredetiSzoveg = $('#jq4 .btn').text()
+$('#jq4 .btn2').click(() => {
+        if (eredetiSzoveg === $('#jq4 .btn').text()) {
+            $('#jq4 .btn').text('Ne nyomkodj!!')
+        } else {
+            $('#jq4 .btn').text(eredetiSzoveg)
+        }
+    })
+    /* jQuery esemény - 3. feladat */
+let jq4Szinek = ['black', 'white', 'yellow', 'green', 'blue', 'red', 'purple', 'grey', 'none']
+let veletlen
+$('#jq4 .btn3').click(() => {
+    veletlen = Math.floor(Math.random() * jq4Szinek.length)
+    $('#jq4 button').css('background-color', jq4Szinek[veletlen])
+})
