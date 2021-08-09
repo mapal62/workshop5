@@ -67,3 +67,30 @@ myNumbers.forEach((number) => {
 });
 //-----
 console.log('--Ciklus és tömb: 2. feladat - lásd fent')
+
+//DOM és jquery
+ /* jQuery - 1. feladat */
+$('#fox-1').text('Macrotis')
+$('#fox-2').css('border-color','purple')
+$('#jq1 p').css('background-color','yellow')
+
+ /* jQuery - 2. feladat */
+ let color = "purple"
+ let number ="10"
+ let word ="cool"
+
+ if (color === 'purple') {
+     $('#jq2 .north').css('background-color',color)
+ }
+
+ if (number > 100) {
+     $('#jq2 .east').text('wow, de nagy szám')
+ } else {
+    $('#jq2 .east').text('ez csak egy közönséges szám')
+ }
+
+ if (word === 'cool') {
+     $('#jq2 .south').text('A DOM Ereje')
+ } else {
+    $('#jq2 .south').text(word) 
+ }

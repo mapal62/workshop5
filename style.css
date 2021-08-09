@@ -1,0 +1,44 @@
+ /* jQuery - 1. feladat */
+#jq1 p {
+    background: #0d91a1;
+    color: #015668;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    margin: 30px;
+    border: 3px dashed #7dce94;
+    font-family: "Baloo Thambi 2", cursive;
+    font-size: 40px;
+  }
+
+  /* jQuery - 2. feladat */
+
+  #jq2 main {
+    border: 5px solid #4285f4;
+    width: 200px;
+  }
+
+  #jq2 .north {
+    background: #e67676;
+    color: white;
+  }
+  #jq2 .east {
+    background: #f2f062;
+    color: grey;
+  }
+  #jq2 .south {
+    background: #a9e6e6;
+    color: white;
+  }
+  #jq2 .west {
+    background: #7692e4;
+    color: white;
+  }
+  #jq2 .direction {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-family: "Baloo Thambi 2", cursive;
+    font-weight: bold;
+    font-size: 24px;
+  }
