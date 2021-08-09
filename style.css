@@ -1,4 +1,9 @@
- /* jQuery - 1. feladat */
+/* jQuery - 1. feladat */
+
+h3 {
+    margin-top: 40px;
+}
+
 #jq1 p {
     background: #0d91a1;
     color: #015668;
@@ -9,36 +14,69 @@
     border: 3px dashed #7dce94;
     font-family: "Baloo Thambi 2", cursive;
     font-size: 40px;
-  }
+}
 
-  /* jQuery - 2. feladat */
 
-  #jq2 main {
+/* jQuery - 2. feladat */
+
+#jq2 main {
     border: 5px solid #4285f4;
     width: 200px;
-  }
+}
 
-  #jq2 .north {
+#jq2 .north {
     background: #e67676;
     color: white;
-  }
-  #jq2 .east {
+}
+
+#jq2 .east {
     background: #f2f062;
     color: grey;
-  }
-  #jq2 .south {
+}
+
+#jq2 .south {
     background: #a9e6e6;
     color: white;
-  }
-  #jq2 .west {
+}
+
+#jq2 .west {
     background: #7692e4;
     color: white;
-  }
-  #jq2 .direction {
+}
+
+#jq2 .direction {
     margin: 0;
     padding: 25px;
     text-align: center;
     font-family: "Baloo Thambi 2", cursive;
     font-weight: bold;
     font-size: 24px;
-  }
+}
+
+
+/* jQuery DOM - 1. feladat */
+
+#jq3 div {
+    border: 5px solid #4285f4;
+    width: 200px;
+    margin: 5px;
+}
+
+#jq3 .north {
+    background: #e67676;
+    color: white;
+}
+
+#jq3 .south {
+    background: #a9e6e6;
+    color: white;
+}
+
+#jq3 .direction {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-family: "Baloo Thambi 2", cursive;
+    font-weight: bold;
+    font-size: 24px;
+}
