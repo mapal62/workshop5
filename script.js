@@ -179,9 +179,13 @@ $('#jq6 button').click(() => {
         $('#jq6 ul').append(`<li>${whatToDo}</li>`)
     }
 })
-$('#jq6 li').click(function() {
-    $(this).slideUp();
-})
-$("p").click(function() {
+
+// jQuery Todo lista - áthúzás
+$('#jq6 ul').on('click', 'li', (function() {
+    // $(this).slideUp();
+    $(this).css('text-decoration', 'line-through')
+}))
+
+$("#jq6 p").click(function() {
     $(this).slideUp();
 });
