@@ -179,3 +179,9 @@ $('#jq6 button').click(() => {
         $('#jq6 ul').append(`<li>${whatToDo}</li>`)
     }
 })
+$('#jq6 li').click(function() {
+    $(this).slideUp();
+})
+$("p").click(function() {
+    $(this).slideUp();
+});
