@@ -92,3 +92,41 @@ h3 {
     font-weight: bold;
     font-size: 24px;
 }
+
+#jq7 {
+    background-color: #50e3c2;
+    min-width: 340px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+#jq7 h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#jq7 .cetli {
+    background-color: #f7f7f7;
+    width: 300px;
+    margin: 30px auto 60px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #b8b8b8;
+}
+
+#jq7 button {
+    background-color: #df69e8;
+    color: white;
+    border: none;
+    margin: 0;
+    height: 25px;
+}
+
+#jq7 input {
+    margin: 0;
+    height: 25px;
+    box-sizing: border-box;
+    width: 70%;
+}
