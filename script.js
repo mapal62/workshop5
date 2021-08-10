@@ -170,3 +170,12 @@ $('#jq6 .csokken').click(() => {
     szamlalo--
     $('#jq6 #ertek').text(szamlalo)
 })
+
+// jQuery Todo lista
+let whatToDo
+$('#jq6 button').click(() => {
+    whatToDo = $('#jq6 input').val()
+    if (whatToDo !== "") {
+        $('#jq6 ul').append(`<li>${whatToDo}</li>`)
+    }
+})
