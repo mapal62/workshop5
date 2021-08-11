@@ -130,3 +130,27 @@ h3 {
     box-sizing: border-box;
     width: 70%;
 }
+
+#jq7 .row {
+    display: flex;
+}
+
+#jq7 .row p {
+    flex-grow: 4;
+    margin: 0;
+    text-align: left;
+    padding-top: 8px;
+}
+
+#jq7 .row .icons {
+    flex-grow: 1;
+    padding-top: 8px;
+}
+
+#jq7 a {
+    font-size: 8px;
+}
+
+#jq7 .selected {
+    color: #df69e8;
+}
