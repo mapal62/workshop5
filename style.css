@@ -133,10 +133,10 @@ h3 {
 
 #jq7 .row {
     display: flex;
+    justify-content: space-between;
 }
 
 #jq7 .row p {
-    flex-grow: 4;
     margin: 0;
     text-align: left;
     padding-top: 8px;
@@ -144,8 +144,8 @@ h3 {
 }
 
 #jq7 .row .icons {
-    flex-grow: 1;
     padding-top: 8px;
+    width: 50px;
 }
 
 #jq7 a {
