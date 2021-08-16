@@ -140,6 +140,7 @@ h3 {
     margin: 0;
     text-align: left;
     padding-top: 8px;
+    /* color: grey; */
 }
 
 #jq7 .row .icons {
@@ -153,4 +154,8 @@ h3 {
 
 #jq7 .selected {
     color: #df69e8;
+}
+
+.aktiv {
+    color: red;
 }

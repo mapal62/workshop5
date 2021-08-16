@@ -189,3 +189,29 @@ $('#jq6 ul').on('click', 'li', (function() {
 $("#jq6 p").click(function() {
     $(this).slideUp();
 });
+
+// jQuery Todo lista haladó
+let superB
+let todoSor = 0;
+let melyiket
+$('#jq7 button').click(() => {
+    console.log('GOMB');
+    superB = $('#jq7 input').val()
+    if (superB !== "") {
+        todoSor = todoSor + 1;
+        $('#jq7 .lista').append(`
+        <div class="row aktiv" data-sor="${todoSor}">
+        <p>${superB}</p>
+                    <div class="icons">
+                        <i class="fas fa-trash delete-btn" data-sor="${todoSor}"></i>
+                        <i class="far fa-check-circle check-btn" data-sor="${todoSor}"></i>
+                    </div>
+                    </div>
+        `)
+    }
+})
+$('#jq7 .lista').on('click', '.check-btn', (event) => {
+    console.log(event);
+    melyiket = $(event.target).attr('data-sor');
+    $(`#jq7 .lista .row:nth-of-type(${melyiket})`).removeClass('aktiv');
+})
