@@ -200,7 +200,7 @@ $('#jq7 button').click(() => {
     if (superB !== "") {
         todoSor = todoSor + 1;
         $('#jq7 .lista').append(`
-        <div class="row" data-sor="${todoSor}">
+        <div class="row">  
         <p class="aktiv">${superB}</p>
                     <div class="icons">
                         <i class="fas fa-trash delete-btn" data-sor="${todoSor}"></i>
@@ -212,8 +212,13 @@ $('#jq7 button').click(() => {
     superB = $('#jq7 input').val("");
 })
 $('#jq7 .lista').on('click', '.check-btn', (event) => {
-    console.log(event);
+    // console.log(event);
     melyiket = $(event.target).attr('data-sor');
     $(`.row:nth-of-type(${melyiket}`).children('p').toggleClass('aktiv');
     $(`.row:nth-of-type(${melyiket}`).find('.check-btn').toggleClass(['far', 'fas', 'selected']);
+})
+$('#jq7 .lista').on('click', '.delete-btn', (e) => {
+    melyiket = $(e.target).attr('data-sor');
+    // console.log(melyiket);
+    $(`.row:nth-of-type(${melyiket}`).hide();
 })
